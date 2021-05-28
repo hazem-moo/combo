@@ -1,12 +1,19 @@
 .head-overlay {
     position: relative;
-    background-image: url('../../Images/1.jpg');
+    background : fixed url('../../Images/1.jpg') top left;
     background-size: cover;
     background-repeat: no-repeat;
     height: 800px;
     overflow: hidden;
     margin-bottom: 160px;
 }
+
+@media ( min-width : 340px ) and ( max-width : 576px ) {
+    .head-overlay {
+        background-size: 100vw 100%;
+    }
+}
+
 .head-overlay > div {
     position: absolute;
     top: 0;

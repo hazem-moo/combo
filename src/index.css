@@ -22,3 +22,8 @@ code {
   text-align: right;
   direction: rtl;
 }
+
+::selection {
+  color: aliceblue;
+  background-color: firebrick;
+}
