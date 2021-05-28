@@ -1,0 +1,64 @@
+.head-overlay {
+    position: relative;
+    background-image: url('../../Images/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    overflow: hidden;
+    margin-bottom: 160px;
+}
+.head-overlay > div {
+    position: absolute;
+    top: 0;
+    width: 30%;
+    margin-right: 9px;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient( rgba(119, 119, 119, 0.3), rgba(0, 0, 0, 0.4) );
+    transition: all 1s ease-in-out;
+}
+.head-overlay > div:nth-of-type( 1 ) {
+    animation: home-overlay-1 10s ease-in-out 1s infinite alternate;
+    left: 5px;
+}
+.head-overlay > div:nth-of-type( 2 ) {
+    animation: home-overlay-2 10s ease-in-out 1.5s infinite alternate;
+    right: 5px;
+}
+
+@keyframes home-overlay-1 {
+    10% , 30%{
+        top : 0;
+        opacity: .3;
+    }
+    20% {
+        left: 100%;
+    }
+}
+
+@keyframes home-overlay-2 {
+    10%, 30% {
+        top : 0;
+        opacity: .3;
+    }
+    20% {
+        right: 100%;
+ }
+}
+
+.head-overlay > .head {
+    color: aliceblue;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 90px;
+    font-weight: 500;
+    font-family: 'Pattaya', sans-serif;
+}
+
+.head-overlay > .head > h2 {
+    font-size: 80px;
+}

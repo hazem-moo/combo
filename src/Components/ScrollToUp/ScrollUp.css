@@ -1,0 +1,13 @@
+.scroll-up {
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+}
+
+.scroll-up  i {
+    color: firebrick;
+    background-color: aliceblue;
+    width: 30px;
+    cursor: pointer;
+}

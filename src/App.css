@@ -1,0 +1,9 @@
+.lang {
+  width: 100px;
+  margin: 7px 10px;
+  transition: all 1s ease;
+
+}
+.lang:hover {
+  background-color: #eb6b5d;
+}

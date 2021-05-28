@@ -1,0 +1,105 @@
+
+/****************************** start logo menu ******************** */
+
+.menu-overlay {
+    background: fixed url('../../Images/16.jpg');
+    background-size: cover;
+    min-height: 1000px;
+    margin-bottom: 80px;
+    position: relative !important;
+    overflow: hidden !important;
+}
+.menu-overlay .overlay {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    width: 200px;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient( to right, rgba(119, 119, 119, .7), rgba(206, 243, 106, 0.6) );
+    transition: all 1s ease-in-out;
+    animation: home-overlay-1 13s ease-in-out 1s infinite alternate;
+}
+
+@keyframes home-overlay-1 {
+    from {
+        left: 0;
+        opacity: .3;
+        animation-delay: 9s;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+            /*******************************************************/
+
+.menu-1 {
+    background: fixed url('../../Images/2.jpg') ;
+    background-size: cover;
+    min-height: 800px;
+    margin-bottom: 100px;
+}
+
+.menu-1 .head {
+    background-color: aliceblue;
+    color: firebrick;
+    font-size: 25px;
+    padding: 22px;
+}
+
+.menu-1 .head + p {
+    background-color: aliceblue;
+    color: #444;
+    padding: 22px;
+    margin-top: -8px;
+    margin-bottom: 40px;
+}
+
+/**************************** start post ******************** */
+.menu-1 .post {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 50px 0;
+}
+
+.menu-1 .post > h4 {
+    color: firebrick;
+    font-weight: 500;
+}
+
+.menu-1 .post > .img-post {
+    height: 200px;
+    margin: 15px 0;
+}
+
+.menu-1 .post > p {
+    margin: 10px;
+    color: #666;
+}
+
+.menu-1 .post span {
+    color: firebrick;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu-1 .post .icon {
+    color: firebrick;
+    padding: 10px;
+}
+.menu-1 .post p:last-child {
+    color: firebrick;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.up {
+    color: firebrick;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px auto 40px !important;
+    width: 25px;
+    height: 25px;
+    text-decoration: none;
+}

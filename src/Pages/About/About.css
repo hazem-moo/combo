@@ -1,0 +1,22 @@
+.about .post {
+    margin-bottom: 30px ;
+}
+
+.about .post > h4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgb(117, 17, 17);
+}
+
+.about .post > p {
+    font-size: 20px;
+    color: #777;
+    padding: 15px;
+}
+
+.about .post-img > img {
+    overflow-x: hidden;
+    
+    height: 445px;
+}
