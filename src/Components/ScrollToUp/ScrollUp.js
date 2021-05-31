@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { animateScroll } from 'react-scroll'
 import './ScrollUp.css'
 
 const ScrollUp = () => {
@@ -16,9 +17,14 @@ const ScrollUp = () => {
          
     }, [] )
     return (
-        <div ref={ upRef } className={ ` ${ isShow ? "d-block" : "d-none" } scroll-up ` }>
-            <i class="fas fa-angle-double-up fa-2x text-center rounded-circle " 
-            onClick={ () => window.scrollTo( 0, 0 ) } ></i>
+        <div
+            ref={ upRef }
+            className={ ` ${ isShow ? "d-block" : "d-none" } scroll-up ` } 
+            onClick={ () => animateScroll.scrollToTop( 7000 ) }
+        >
+                <i class="fas fa-angle-double-up fa-2x text-center rounded-circle " 
+                // onClick={ () => window.scrollTo( 0, 0 ) }
+            ></i>
         </div>
     )
 }

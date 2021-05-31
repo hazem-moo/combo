@@ -1,14 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css';
 import { Button } from 'reactstrap'
 import { BrowserRouter } from 'react-router-dom'
-
 import LangEn from './LangEn';
 import LangAr from './LangAr';
 
-
 function App() {
-  const [ isLang, setIsLang ] = useState( false );
+  
+    const [ isLang, setIsLang ] = useState( false );
+
+  useEffect( () => {
+    document.title = " combo "
+  }, [])
 
   const toggle = _ => setIsLang( !isLang );
 

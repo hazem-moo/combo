@@ -9,7 +9,7 @@ const MyNavAr = () => {
     const toggle = _ => setIsOpen( !isOpen )
 
     return (
-      <Navbar expand="md" light >
+      <Navbar expand="md" light id="scroll-up">
         <div className='nav-overlay'></div>
         <div className="container con">
                 <NavbarBrand  to='/' exact tag={ Link } > 
