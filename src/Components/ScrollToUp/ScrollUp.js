@@ -20,11 +20,9 @@ const ScrollUp = () => {
         <div
             ref={ upRef }
             className={ ` ${ isShow ? "d-block" : "d-none" } scroll-up ` } 
-            onClick={ () => animateScroll.scrollToTop( 7000 ) }
+            onClick={ () => animateScroll.scrollToTop( ) }
         >
-                <i class="fas fa-angle-double-up fa-2x text-center rounded-circle " 
-                // onClick={ () => window.scrollTo( 0, 0 ) }
-            ></i>
+            <i class="fas fa-angle-double-up fa-2x text-center rounded-circle " ></i>
         </div>
     )
 }
