@@ -23,7 +23,7 @@ const LangEn = () => {
                 <Route path='/Contact' component={ Contact } />
             </Switch>
             <Footer />
-0        </BrowserRouter>
+        </BrowserRouter>
     )
 }
 
